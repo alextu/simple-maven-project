@@ -1,2 +1,2 @@
 # simple-maven-project
-test23
+test24
