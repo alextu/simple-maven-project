@@ -1,2 +1,2 @@
 # simple-maven-project
-test30
+test31
