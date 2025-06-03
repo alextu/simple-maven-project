@@ -1,0 +1,16 @@
+name: Inject
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        name: Build project
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Setup Develocity
+                uses: gradle/develocity-actions/setup-maven@atual/mvn-repo
+                with:
+                    develocity-maven-repository-url: https://repo.grdev.net/artifactory/enterprise-libs-release-candidates-local/
+            -   name: Build
+                run: mvn clean install
