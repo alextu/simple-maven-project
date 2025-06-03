@@ -16,6 +16,6 @@ jobs:
           develocity-injection-enabled: true
           develocity-url: 'https://scans.gradle.com'
           develocity-maven-extension-version: 2.0-rc-5
-          develocity-maven-repository-url: https://repo.grdev.net/artifactory/enterprise-libs-release-candidates-local/
+          develocity-maven-repository-url: https://repo.grdev.net/artifactory/enterprise-libs-release-candidates-local-wrong/
       - name: Build
         run: mvn clean install
