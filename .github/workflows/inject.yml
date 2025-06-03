@@ -13,6 +13,7 @@ jobs:
       - name: Setup Develocity
         uses: gradle/develocity-actions/setup-maven@atual/mvn-repo
         with:
+          develocity-maven-extension-version: 2.0-rc-5
           develocity-maven-repository-url: https://repo.grdev.net/artifactory/enterprise-libs-release-candidates-local/
       - name: Build
         run: mvn clean install
