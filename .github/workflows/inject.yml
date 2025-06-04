@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Develocity
-        uses: gradle/develocity-actions/setup-maven@a07b5e6e99141a971bb35ace48f3b468fda3a7e5
+        uses: gradle/develocity-actions/setup-maven@da7b45dd3f1efc6295f78b8b9f96e5cf4e30ba5f
         with:
           develocity-injection-enabled: true
           develocity-url: 'https://scans.gradle.com'
