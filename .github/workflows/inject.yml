@@ -17,7 +17,7 @@ jobs:
           develocity-url: 'https://scans.gradle.com'
           develocity-maven-extension-version: 2.0-rc-5
           develocity-maven-repository-url: https://repo.grdev.net/artifactory/enterprise-libs-release-candidates-local/
-          develocity-maven-repository-username: foo
-          develocity-maven-repository-password: bar
+          develocity-maven-repository-username: ${{ secrets.REPO_USER }}
+          develocity-maven-repository-password: ${{ secrets.REPO_PASSWORD }}
       - name: Build
         run: mvn clean install
