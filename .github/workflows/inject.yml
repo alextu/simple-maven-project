@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Develocity
-        uses: gradle/develocity-actions/setup-maven@59cd55f6dd25bfe518cd8b943ab77f4f673dfd43
+        uses: gradle/develocity-actions/setup-maven@f957f34fd4c5f85bcc7ef1c74fa84734807084a0
         with:
           develocity-injection-enabled: true
           develocity-url: 'https://dv-helm-standalone-unstable-release.grdev.net'
