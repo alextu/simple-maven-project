@@ -11,11 +11,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Develocity
-        uses: gradle/develocity-actions/setup-maven@c51675297e946e94bb10ddbd6e528fd943cf9aa2
+        uses: gradle/develocity-actions/setup-maven@59cd55f6dd25bfe518cd8b943ab77f4f673dfd43
         with:
           develocity-injection-enabled: true
           develocity-url: 'https://scans.gradle.com'
-          develocity-maven-extension-version: 2.0-rc-5
-          develocity-maven-repository-url: https://repo.grdev.net/artifactory/enterprise-libs-release-candidates-local/
+          develocity-maven-extension-version: 2.3
       - name: Build
         run: mvn clean install
